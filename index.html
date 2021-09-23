@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="styles.css" rel="stylesheet" />
+
+
+
+
+</head>
+<body>
+    <div id="app">
+        <header>
+            <ul>
+                <li>VID-CHIVES</li>
+                <li>About</li>
+                <li>Playlist</li>
+                <li>Contact</li>
+            </ul>
+
+            <input type="text" placeholder="Search Your Fav Video" />
+            
+
+        </header>
+
+        <br/>
+        <div id="s1">
+            <div id="container-left">
+                <div class="vid">
+                    <video src="m1.mp4" width="600px" id="vid" ></video>
+                    <br/>
+                    <div class="adj-buttons">
+                        <div class="but" onclick="playPause ()" id="playPause"><i class="fas fa-play"></i></div>
+                        <div class="but" onclick="volUp ()"><i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="but" onclick="volDown ()"><i class="fas fa-volume-down" onclick=""></i>
+                        </div>
+                        <div class="but" onclick="mute ()"><i class="fas fa-volume-mute" onclick=""></i>
+                        </div>
+                    </div>  
+                </div>
+
+                <h1 id="title"> Video Title</h1>
+                <h3> Video Description</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nam nesciunt eaque ad enim amet incidunt quos et magni deleniti non illum, perferendis officia cum iste sit dolores optio alias iure perspiciatis. Hic aliquid quae molestiae laboriosam, quos consequuntur harum.</p>
+
+            </div>
+
+            <div id="container-right">
+                <h1>Related Videos</h1>
+
+                <div id="vid-holder">
+                    <div class="img1" onclick="vidChange('m1.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m1.mp4')">Play Video 1</h3>
+                    </div>
+
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img2" onclick="vidChange('m2.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m3.mp4')">Play Video 2</h3>
+                    </div>
+                    
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img3" onclick="vidChange('m3.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m3.mp4')">Play Video 3</h3>
+                    </div>
+                    
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img4" onclick="vidChange('m4.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m4.mp4')">Play Video 4</h3>
+                    </div>
+                    
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img5" onclick="vidChange('m5.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m5.mp4')">Play Video 5</h3>
+                    </div>
+            
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img1" onclick="vidChange('m1.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m1.mp4')">Play Video 1</h3>
+                    </div>
+
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img2" onclick="vidChange('m2.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m3.mp4')">Play Video 2</h3>
+                    </div>
+                    
+                </div>
+
+                <div id="vid-holder">
+                    <div class="img3" onclick="vidChange('m3.mp4')">
+
+                    </div>
+
+                    <div class="text">
+                        <h3 onclick="vidChange('m3.mp4')">Play Video 3</h3>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+        </div> 
+
+        
+
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
