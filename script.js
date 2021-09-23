@@ -1,5 +1,5 @@
 var vid = document.getElementById('vid');
-var isPlaying = false;
+// var isPlaying = true;
 var vol = 1;
 
 
