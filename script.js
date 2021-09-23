@@ -2,8 +2,30 @@ var vid = document.getElementById('vid');
 var isPlaying = false;
 var vol = 1;
 
-// var title = fullpath.substr\Users\amirh\Desktop\InvokeFrontEnd\Day8\Day8 Challenge
 
+var currentId = 0;
+
+var title = document.getElementById('title');
+
+title.innerHTML = list[currentId].title;
+
+// var list = [{Id:1, title: "One"} , {Id:2, title: "Two",} , {Id:3, title: "Three"}, {Id:4, title: "Four",} , {Id:5, title: "Five"}];
+
+
+//HOW TO CHANGE TITLE WHEN SONG CHANGE
+
+// function init() {
+   //reset music duration and setup audio
+//     var audio =
+//     document.getElementById(currentAudio) === null ?
+//     new Audio() :
+//     document.getElementById(currentAudio);
+//     audio.src = list[currentId].url;
+//     audio.id = currentAudio;
+//     document.getElementById(currentAudio) === null ?
+//     document.body.appendChild(audio) :
+
+// }
 
 function mute () {
     if (vol>0) {
