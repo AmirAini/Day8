@@ -7,7 +7,7 @@ var currentId = 0;
 
 var title = document.getElementById('title');
 
-title.innerHTML = list[currentId].title;
+// title.innerHTML = list[currentId].title;
 
 // var list = [{Id:1, title: "One"} , {Id:2, title: "Two",} , {Id:3, title: "Three"}, {Id:4, title: "Four",} , {Id:5, title: "Five"}];
 
@@ -36,16 +36,16 @@ function mute () {
 }
 
 function playPause () {
-    if(isPlaying== false) {
+    if(isPlaying == true) {
         vid.play();
-        isPlaying = true;
+        isPlaying = false;
         document.getElementById('playPause').innerHTML = "<i class='fas fa-pause'></i>";
         return; //stop the logic scope
     }
 
-    if(isPlaying== true) {
+    if(isPlaying== false) {
         vid.pause();
-        isPlaying = false;
+        isPlaying = true;
         document.getElementById('playPause').innerHTML = "<i class='fas fa-play'></i>";
         return;
     }
