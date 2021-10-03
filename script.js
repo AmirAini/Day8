@@ -29,9 +29,10 @@ var title = document.getElementById('title');
 
 function mute () {
     if (vol>0) {
-         vol = 0;
+        vol = 0;
     }
         console.log (vol);
+        vid.volume = vol; 
     
 }
 
@@ -59,8 +60,7 @@ function volUp () {
     }
 
     console.log (vol);
-
-    vid.vol = vol; //output
+    vid.volume = vol; 
 }
 
 function volDown () {
@@ -72,9 +72,10 @@ function volDown () {
 
     console.log (vol);
 
-    vid.vol = vol; //output
+    vid.volume = vol; //output
 }
 
 function vidChange(fileName) {
     vid.src = fileName;
+    document.getElementById('playPause').innerHTML = "<i class='fas fa-pause'></i>";
 }
